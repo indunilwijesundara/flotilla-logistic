@@ -118,8 +118,30 @@
                                         display: flex;
                                         flex-direction: column;
                                     }
+
+                                    @media print {
+
+
+                                        body * {
+                                            visibility: hidden;
+
+                                        }
+
+                                        .print-container {
+                                            transform: scale(0.9);
+                                            /* Adjust the scale as needed */
+                                            transform-origin: top left;
+                                        }
+
+                                        .print-container,
+                                        .print-container * {
+                                            visibility: visible;
+
+                                        }
+
+                                    }
                                     </style>
-                                    <div class="m-3" id="invoiceModalContent">
+                                    <div class="print-container m-3" id="invoiceModalContent">
                                         <table class="table table-bordered">
                                             <tr>
                                                 <td colspan="4">
@@ -251,17 +273,17 @@
 
 
                                         </table>
-                                        <!-- Add Print button -->
-                                        <div class="text-end m-3">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary"
-                                                onclick="printInvoice()">Print</button>
-                                        </div>
+
 
                                     </div>
 
-
+                                    <!-- Add Print button -->
+                                    <div class="text-end m-3">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary"
+                                            onclick="printInvoice()">Print</button>
+                                    </div>
                                     <script>
                                     function printInvoice() {
                                         // var printWindow = window.open('', '_blank');
@@ -276,25 +298,21 @@
                                         // printWindow.document.close();
 
                                         // printWindow.print();
-                                        var tableHtml = document.getElementById('invoiceModalContent').innerHTML;
+                                        window.print();
 
+                                        // Now, send the data to the server using AJAX
                                         $.ajax({
                                             type: 'POST',
-                                            url: 'generate_pdf.php',
+                                            url: 'save_printed_content.php', // Update with the correct PHP script path
                                             data: {
-                                                invoiceHtml: tableHtml
+                                                content: document.getElementById('invoiceModalContent')
+                                                    .innerHTML
                                             },
                                             success: function(response) {
-                                                if (response.success) {
-                                                    // Download the generated PDF
-                                                    window.location.href =
-                                                        'generated_invoice.pdf'; // Update with the correct path
-                                                } else {
-                                                    alert('PDF generation failed.');
-                                                }
+                                                console.log('File saved successfully.');
                                             },
                                             error: function() {
-                                                alert('PDF generation failed!');
+                                                console.log('Error saving file.');
                                             }
                                         });
                                     }
