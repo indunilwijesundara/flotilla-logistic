@@ -1,23 +1,33 @@
-
-                                        <table class="table table-bordered">
+<head><title>Print Invoice</title><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"><style>body { font-family: Arial, sans-serif; }table { font-family: Arial, sans-serif; border: 1px solid black; border-collapse: collapse; width: 100%; }td, th { border: 1px solid black; text-align: left; padding: 8px; font-size: 12px; }.form-control-inline { border: none; padding: 0; width: 100%; }.company-details { gap: 20px; }.BL-number { position: absolute; top: 20px; right: 20px; display: flex; align-items: center; gap: 5px; border: 1px solid grey; padding: 0px 10px 0px 10px; }.BL-number label { margin-top: 10px; }.BL-number input { width: 100px; }.logo1 { display: flex; flex-direction: column; justify-content: center; text-align: center; margin-top: 50px; }.shipper { display: flex; flex-direction: column; }/* Add more CSS styles here */</style></head><body>
+        
+        
+            <title>Print Invoice</title>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+            <style>
+                /* Your CSS styles here */
+            </style>
+        
+        
+            <div class="print-container m-3" style="">
+            <table class="table table-bordered">
                                             <tbody><tr>
                                                 <td colspan="4">
                                                     <div class="shipper">
                                                         <label for="">SHIPPER</label>
-                                                        <input type="text" class="form-control-inline" placeholder="Name">
-                                                        <input type="text" class="form-control-inline" placeholder="Address">
-                                                        <input type="text" class="form-control-inline" placeholder="Zip-code">
+                                                        <input id="shipperName" type="text" name="shipperName" class="form-control-inline" placeholder="Yapa">
+                                                        <input type="text" class="form-control-inline" placeholder="Yapa sewana,Kiulathanna,Mailapitiya">
+                                                        <input type="text" class="form-control-inline" placeholder="20000">
                                                     </div>
                                                 </td>
                                                 <td colspan="4" rowspan="2">
                                                     <div class="company-details">
                                                         <div class="BL-number">
                                                             <div> <label for="">BL NO</label></div>
-                                                            <div> <input type="text" class="form-control-inline"></div>
+                                                            <div> <input type="text" name="blNo" class="form-control-inline" placeholder="00002"></div>
 
                                                         </div>
                                                         <div class="logo1">
-                                                            <div><img src="assets/images/logo.png" alt="" width="200px">
+                                                            <div><img src="logo.png" alt="" width="200px">
                                                             </div>
 
                                                             <label for="" style="font-size:10px;line-height: 12px;color:blue">167,
@@ -35,9 +45,9 @@
                                                 <td colspan="4">
                                                     <div class="shipper">
                                                         <label for="">CONSIGNEE</label>
-                                                        <input type="text" class="form-control-inline" placeholder="Name">
-                                                        <input type="text" class="form-control-inline" placeholder="Address">
-                                                        <input type="text" class="form-control-inline" placeholder="Zip-code">
+                                                        <input type="text" class="form-control-inline" placeholder="">
+                                                        <input type="text" class="form-control-inline" placeholder="">
+                                                        <input type="text" class="form-control-inline" placeholder="">
                                                     </div>
                                                 </td>
                                             </tr>
@@ -45,28 +55,28 @@
                                                 <td colspan="4">
                                                     <div class="shipper">
                                                         <label for="">NOTIFY PARTY</label>
-                                                        <input type="text" class="form-control-inline" placeholder="Company Name">
-                                                        <input type="text" class="form-control-inline" placeholder="Address">
-                                                        <input type="text" class="form-control-inline" placeholder="Telephone No">
+                                                        <input type="text" class="form-control-inline" placeholder="">
+                                                        <input type="text" class="form-control-inline" placeholder="">
+                                                        <input type="text" class="form-control-inline" placeholder="">
                                                     </div>
                                                 </td>
                                                 <td colspan="4" rowspan="2"> For delivery of goods please apply to:
-                                                    <input type="text" class="form-control-inline" placeholder="For delivery of goods please apply to" max-line="3">
+                                                    <input type="text" class="form-control-inline" placeholder="" max-line="3">
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2">Place of Receipt</td>
-                                                <td colspan="2"><input type="text" class="form-control-inline" placeholder="Place of Receipt"></td>
+                                                <td colspan="2"><input type="text" class="form-control-inline" placeholder=""></td>
                                             </tr>
                                             <tr>
-                                                <td colspan="2"><input type="text" class="form-control-inline" placeholder="Port of Loading"></td>
+                                                <td colspan="2"><input type="text" class="form-control-inline" placeholder=""></td>
                                                 <td colspan="2">Port of Loading</td>
-                                                <td colspan="4" rowspan="2">For delivery of goods please apply to:<input type="text" class="form-control-inline" placeholder="For delivery of goods please apply to" max-line="3">
+                                                <td colspan="4" rowspan="2">For delivery of goods please apply to:<input type="text" class="form-control-inline" placeholder="" max-line="3">
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td colspan="2">Port of Discharge<input type="text" class="form-control-inline" placeholder="enter"></td>
-                                                <td colspan="2">Final Destination<input type="text" class="form-control-inline" placeholder="enter"></td>
+                                                <td colspan="2">Port of Discharge<input type="text" class="form-control-inline" placeholder=""></td>
+                                                <td colspan="2">Final Destination<input type="text" class="form-control-inline" placeholder=""></td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2"> Container &amp; Seal No</td>
@@ -76,13 +86,13 @@
                                                 <td colspan="2">Measurement(CBM) Gross Weight(KGS)</td>
                                             </tr>
                                             <tr style="height:300px">
-                                                <td colspan="2"><input type="text" class="form-control-inline" placeholder="enter"> </td>
-                                                <td colspan="1"><input type="text" class="form-control-inline" placeholder="enter"> </td>
-                                                <td colspan="3"><input type="text" class="form-control-inline" placeholder="enter"></td>
-                                                <td colspan="2"><input type="text" class="form-control-inline" placeholder="enter"></td>
+                                                <td colspan="2"><input type="text" class="form-control-inline" placeholder=""> </td>
+                                                <td colspan="1"><input type="text" class="form-control-inline" placeholder=""> </td>
+                                                <td colspan="3"><input type="text" class="form-control-inline" placeholder=""></td>
+                                                <td colspan="2"><input type="text" class="form-control-inline" placeholder=""></td>
                                             </tr>
                                             <tr>
-                                                <td colspan="2">FREIGHT &amp; CHARGES</td>
+                                                <td colspan="2"><input type="text" class="form-control-inline" placeholder="">FREIGHT &amp; CHARGES</td>
                                                 <td colspan="1">Revenue Tons</td>
                                                 <td colspan="1"> </td>
                                                 <td colspan="1">Rate</td>
@@ -94,7 +104,7 @@
                                                 <td colspan="1">Exchange Rate</td>
                                                 <td colspan="2"> </td>
                                                 <td colspan="1">Prepaid at</td>
-                                                <td colspan="2">Payable at</td>
+                                                <td colspan="2"><input type="text" class="form-control-inline" placeholder="">Payable at</td>
                                             </tr>
                                             <tr>
                                                 <td colspan="8"></td>
@@ -109,6 +119,7 @@
 
 
                                         </tbody></table>
-
-
-                                    
+            </div>
+        
+        
+    <div class="shipper"></div></body>

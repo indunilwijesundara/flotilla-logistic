@@ -29,7 +29,7 @@
                             <div class="auth-content my-auto">
                                 <div class="text-center">
                                     <h5 class="mb-0">Welcome Back !</h5>
-                                    <p class="text-muted mt-2">Sign in to continue to Dason.</p>
+                                    <p class="text-muted mt-2">Sign in to continue to Flotilla Logistic.</p>
                                 </div>
                                 <form method="post" action="">
                                     <div class="form-floating form-floating-custom mb-4">
@@ -108,8 +108,8 @@
                             <div class="mt-4 mt-md-5 text-center">
                                 <p class="mb-0">© <script>
                                     document.write(new Date().getFullYear())
-                                    </script> Dason . Crafted with <i class="mdi mdi-heart text-danger"></i> by
-                                    Themesdesign</p>
+                                    </script> Flotilla Logistic . Crafted with <i class="mdi mdi-heart text-danger"></i>
+                                    by Esupport Technology</p>
                             </div>
                         </div>
                     </div>

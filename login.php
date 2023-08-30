@@ -126,7 +126,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                     <div class="form-floating form-floating-custom mb-4">
                                         <input type="text"
                                             class="form-control <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>"
-                                            id="\username" name="username" value="henry" placeholder="Enter User Name">
+                                            id="\username" name="username" value="admin" placeholder="Enter User Name">
                                         <label for="input-username">Username</label>
                                         <span class="text-danger"><?php echo $username_err; ?></span>
                                         <div class="form-floating-icon">

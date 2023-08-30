@@ -20,7 +20,7 @@
 
                         <li>
                             <a href="javascript: void(0);" class="has-arrow">
-                                <i data-feather="shopping-cart"></i>
+                                <i data-feather="truck"></i>
                                 <span data-key="t-ecommerce">Export </span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">

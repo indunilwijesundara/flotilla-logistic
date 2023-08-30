@@ -21,7 +21,8 @@
                         <div class="d-flex flex-column h-100">
                             <div class="mb-4 mb-md-5 text-center">
                                 <a href="index.php" class="d-block auth-logo">
-                                    <img src="assets/images/logo-sm.svg" alt="" height="28"> <span class="logo-txt">Dason</span>
+                                    <img src="assets/images/logo-sm.svg" alt="" height="28"> <span
+                                        class="logo-txt">Flotilla Logistic</span>
                                 </a>
                             </div>
                             <div class="auth-content my-auto">
@@ -33,20 +34,24 @@
                                     </div>
                                     <div class="p-2 mt-4">
                                         <h4>Verify your email</h4>
-                                        <p>We have sent you verification email <span class="fw-bold">example@abc.com</span>, Please check it</p>
+                                        <p>We have sent you verification email <span
+                                                class="fw-bold">example@abc.com</span>, Please check it</p>
                                         <div class="mt-4">
                                             <a href="index.php" class="btn btn-primary w-10">Verify email</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="mt-5 text-center">
-                                    <p class="text-muted mb-0">Didn't receive an email ? <a href="#" class="text-primary fw-semibold"> Resend </a> </p>
+                                    <p class="text-muted mb-0">Didn't receive an email ? <a href="#"
+                                            class="text-primary fw-semibold"> Resend </a> </p>
                                 </div>
                             </div>
                             <div class="mt-4 mt-md-5 text-center">
                                 <p class="mb-0">© <script>
-                                        document.write(new Date().getFullYear())
-                                    </script> Dason . Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesdesign</p>
+                                    document.write(new Date().getFullYear())
+                                    </script>Flotilla Logistic . Crafted with <i class="mdi mdi-heart text-danger"></i>
+                                    by
+                                    Esupport Technology</p>
                             </div>
                         </div>
                     </div>
@@ -74,15 +79,23 @@
                         <div class="col-xl-7">
                             <div class="p-0 p-sm-4 px-xl-0">
                                 <div id="reviewcarouselIndicators" class="carousel slide" data-bs-ride="carousel">
-                                    <div class="carousel-indicators auth-carousel carousel-indicators-rounded justify-content-center mb-0">
-                                        <button type="button" data-bs-target="#reviewcarouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
-                                            <img src="assets/images/users/avatar-1.jpg" class="avatar-md img-fluid rounded-circle d-block" alt="...">
+                                    <div
+                                        class="carousel-indicators auth-carousel carousel-indicators-rounded justify-content-center mb-0">
+                                        <button type="button" data-bs-target="#reviewcarouselIndicators"
+                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                            aria-label="Slide 1">
+                                            <img src="assets/images/users/avatar-1.jpg"
+                                                class="avatar-md img-fluid rounded-circle d-block" alt="...">
                                         </button>
-                                        <button type="button" data-bs-target="#reviewcarouselIndicators" data-bs-slide-to="1" aria-label="Slide 2">
-                                            <img src="assets/images/users/avatar-2.jpg" class="avatar-md img-fluid rounded-circle d-block" alt="...">
+                                        <button type="button" data-bs-target="#reviewcarouselIndicators"
+                                            data-bs-slide-to="1" aria-label="Slide 2">
+                                            <img src="assets/images/users/avatar-2.jpg"
+                                                class="avatar-md img-fluid rounded-circle d-block" alt="...">
                                         </button>
-                                        <button type="button" data-bs-target="#reviewcarouselIndicators" data-bs-slide-to="2" aria-label="Slide 3">
-                                            <img src="assets/images/users/avatar-3.jpg" class="avatar-md img-fluid rounded-circle d-block" alt="...">
+                                        <button type="button" data-bs-target="#reviewcarouselIndicators"
+                                            data-bs-slide-to="2" aria-label="Slide 3">
+                                            <img src="assets/images/users/avatar-3.jpg"
+                                                class="avatar-md img-fluid rounded-circle d-block" alt="...">
                                         </button>
                                     </div>
                                     <!-- end carouselIndicators -->
