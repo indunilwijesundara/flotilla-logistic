@@ -40,7 +40,9 @@
                         <div class="card">
                             <div class="card-header">
                                 <h4 class="card-title">New Icons</h4>
-                                <p class="card-title-desc">Use <code>&lt;i class="mdi mdi-speedometer-slow"&gt;&lt;/i&gt;</code> <span class="badge bg-success">v 5.8.55</span>.</p>
+                                <p class="card-title-desc">Use
+                                    <code>&lt;i class="mdi mdi-speedometer-slow"&gt;&lt;/i&gt;</code> <span
+                                        class="badge bg-success">v 5.8.55</span>.</p>
                             </div>
                             <div class="card-body">
                                 <div class="row icon-demo-content" id="newIcons"></div>

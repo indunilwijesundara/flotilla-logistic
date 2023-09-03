@@ -1,11 +1,4 @@
-/*
-Template Name: Dason - Admin & Dashboard Template
-Author: Themesdesign
-Version: 1.0.0.
-Website: https://themesdesign.in/
-Contact: themesdesign.in@gmail.com
-File: Main Css File
-*/
+
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap");
 body[data-layout-mode="dark"] {
   background-color: #191e22;
@@ -167,7 +160,7 @@ body[data-layout-mode="dark"] .layout-mode-light {
   content: "\ea3f"; }
 
 body[data-topbar="dark"] #page-topbar {
-  background-color: #1c84ee;
+  background-color: #1a5187;
   border-color: #1c84ee;
   -webkit-box-shadow: 0 0.2rem 0.5rem rgba(18, 38, 63, 0.3);
           box-shadow: 0 0.2rem 0.5rem rgba(18, 38, 63, 0.3); }

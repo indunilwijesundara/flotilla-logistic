@@ -11,7 +11,7 @@
                         <li>
                             <a href="index.php">
                                 <i data-feather="home"></i>
-                                <span class="badge rounded-pill bg-soft-success text-success float-end">9+</span>
+
                                 <span data-key="t-dashboard"><?php echo $language['Dashboard'] ?> </span>
                             </a>
                         </li>
@@ -20,12 +20,26 @@
 
                         <li>
                             <a href="javascript: void(0);" class="has-arrow">
-                                <i data-feather="truck"></i>
+                                <i data-feather="send"></i>
                                 <span data-key="t-ecommerce">Export </span>
+
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
                                 <li><a href="export-new-forms.php" key="t-products">New Export Forms </a></li>
                                 <li><a href="export-list-forms.php" data-key="t-product-detail">Export Form List
+                                    </a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow">
+                                <i data-feather="send"></i>
+                                <span data-key="t-ecommerce">Import</span>
+
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="export-new-forms.php" key="t-products">New Import Forms </a></li>
+                                <li><a href="export-list-forms.php" data-key="t-product-detail">Import Form List
                                     </a></li>
 
                             </ul>
